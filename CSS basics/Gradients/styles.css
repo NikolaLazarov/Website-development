@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Secular+One&display=swap');
+
+:root {
+    --gradient: linear-gradient(90deg,
+            #ff944d,
+            #ff66b3,
+            #d24dff,
+            #6666ff
+            );
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 25s infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left
+    }
+
+    50% {
+        background-position: right
+    }
+
+    100% {
+        background-position: left
+    }
+}
+
+.box {
+    background-color: whitesmoke;
+    width: 60%;
+    height: 200px;
+    box-shadow: 0 0 10px rgb(69, 68, 67);
+}
+
+.par {
+    margin: 15px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 375%;
+    font-style: italic;
+}
+
+.button1 {
+    margin: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: -3px;
+    padding: 10px 20px;
+    color: white;
+    background-image: var(--gradient);
+    border: 0;
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+
+.button1:hover,
+.button1:focus {
+    background-position: right;
+}
