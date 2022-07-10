@@ -15,7 +15,7 @@ body {
     align-items: center;
     background-image: var(--gradient);
     background-size: 400%;
-    animation: bg-animation 25s infinite;
+    animation: bg-animation 30s infinite;
 }
 
 @keyframes bg-animation {
@@ -35,7 +35,7 @@ body {
 .box {
     background-color: whitesmoke;
     width: 60%;
-    height: 200px;
+    height: 200%;
     box-shadow: 0 0 10px rgb(69, 68, 67);
 }
 
@@ -43,8 +43,12 @@ body {
     margin: 15px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
+    color: black;
     font-size: 375%;
     font-style: italic;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
 }
 
 .button1 {
